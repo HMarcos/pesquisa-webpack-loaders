@@ -185,6 +185,13 @@ import IMG from "./assets/images/test.png"
 
 > Por padrão, o nome dos arquivos que são emitos pelo `file-loader` são resultantes da aplicação de um *hash MD5* no **conteúdo** do arquivo mais a extensão original do arquivo.
 
+<figure align="center">
+    <a href="https://www.keycdn.com/support/web-cache" target="_blank"><figcaption>Fonte: keycdn. </figcaption></a>
+    <img src="./pesquisa/imagens/web-cache.png" width=800>
+    <figcaption> Figura 03: Cache do Navegador. </figcaption>
+</figure>
+
+
 Essa função muito útil durante o desevolvimente web, principalmente devido ao comportamento dos navegadores ao buscarem os arquivos da aplicação. Para acelerar esse processo, os navegares utilizam uma memória cache, na qual eles armazenam, de forma temporária, os arquivos, como as imagens, que formam o site. Assim, ao atualizar a página, eles verificam se o arquivo que será soliticitado já está nessa memória cache, se estiver lá não é necessária uma nova requisição. Essa verificação é feita através do nome do arquivo.
 
 Assim quando um desenvolvedor, no modo tradicional, atualiza um arquivo, sem atualizar o nome, existem grandes chances que ao fazer o deploy esse arquivo não seja atualizado no lado do cliente, a não ser que a cache do navegador seja limpa.
